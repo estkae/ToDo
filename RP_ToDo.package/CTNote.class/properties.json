@@ -1,0 +1,15 @@
+{
+	"category" : "RP_ToDo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"parentTask",
+		"taskNote" ],
+	"name" : "CTNote",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

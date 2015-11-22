@@ -1,0 +1,27 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"aboutComponent" : "RichardPillar 12/24/2014 11:01",
+		"aboutComponent:" : "RichardPillar 12/24/2014 11:01",
+		"children" : "RichardPillar 12/24/2014 11:02",
+		"email" : "RichardPillar 10/10/2014 16:38",
+		"email:" : "RichardPillar 10/10/2014 16:38",
+		"initialize" : "RichardPillar 1/16/2015 11:47",
+		"loginFailed" : "RichardPillar 1/12/2015 12:21",
+		"messageComponent" : "RichardPillar 1/8/2015 18:20",
+		"messageComponent:" : "RichardPillar 1/8/2015 18:19",
+		"navBarComponent" : "RichardPillar 10/3/2014 12:21",
+		"navBarComponent:" : "RichardPillar 10/3/2014 12:21",
+		"password" : "RichardPillar 10/10/2014 16:38",
+		"password:" : "RichardPillar 10/10/2014 16:38",
+		"registerUser" : "RichardPillar 10/1/2014 17:12",
+		"renderButtonsOn:" : "RichardPillar 10/2/2014 18:05",
+		"renderContentOn:" : "RichardPillar 1/8/2015 18:24",
+		"renderEmailInputOn:" : "RichardPillar 12/4/2014 10:59",
+		"renderPasswordInputOn:" : "RichardPillar 10/10/2014 16:36",
+		"sha1" : "RichardPillar 1/16/2015 11:47",
+		"sha1:" : "RichardPillar 1/16/2015 11:47",
+		"style" : "RichardPillar 12/24/2014 11:21",
+		"updateRoot:" : "RichardPillar 1/21/2015 08:52",
+		"validateLogin" : "RichardPillar 4/21/2015 08:54" } }

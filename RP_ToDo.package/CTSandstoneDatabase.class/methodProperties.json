@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addNote:toTask:forUser:" : "RichardPillar 9/9/2015 18:06",
+		"addTask:toUser:" : "RichardPillar 10/2/2015 20:46",
+		"addUser:" : "RichardPillar 11/28/2014 09:30",
+		"findTaskById:" : "RichardPillar 9/4/2015 16:13",
+		"findTaskById:forUser:" : "RichardPillar 9/8/2015 22:41",
+		"findUserByEmail:" : "RichardPillar 11/28/2014 12:09",
+		"getNumberOfNotesForTask:forUser:" : "RichardPillar 9/8/2015 22:02",
+		"initialize" : "RichardPillar 11/28/2014 09:29",
+		"numberOfActiveTasksForUser:" : "RichardPillar 1/2/2015 12:36",
+		"updateTask:" : "RichardPillar 11/28/2014 12:11",
+		"updateTaskStatus:forUser:" : "RichardPillar 1/2/2015 10:03" } }

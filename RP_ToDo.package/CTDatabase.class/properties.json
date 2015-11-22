@@ -1,0 +1,14 @@
+{
+	"category" : "RP_ToDo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"connectionFailed" ],
+	"name" : "CTDatabase",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

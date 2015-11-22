@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addTask" : "RichardPillar 1/2/2015 16:58",
+		"children" : "RichardPillar 10/21/2014 12:28",
+		"description" : "RichardPillar 12/3/2014 16:27",
+		"description:" : "RichardPillar 12/3/2014 16:27",
+		"initialize" : "RichardPillar 1/21/2015 12:35",
+		"listComponent" : "RichardPillar 10/21/2014 12:26",
+		"listComponent:" : "RichardPillar 10/21/2014 12:26",
+		"processInput:" : "RichardPillar 12/3/2014 16:54",
+		"renderContentOn:" : "RichardPillar 9/14/2015 15:06",
+		"renderTaskInputOn:" : "RichardPillar 1/2/2015 12:40",
+		"style" : "RichardPillar 10/24/2014 09:30",
+		"task" : "RichardPillar 10/14/2014 12:36",
+		"task:" : "RichardPillar 10/14/2014 12:36" } }

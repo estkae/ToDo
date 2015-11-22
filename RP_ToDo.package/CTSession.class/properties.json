@@ -1,0 +1,15 @@
+{
+	"category" : "RP_ToDo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"user",
+		"database" ],
+	"name" : "CTSession",
+	"pools" : [
+		 ],
+	"super" : "WASession",
+	"type" : "normal" }

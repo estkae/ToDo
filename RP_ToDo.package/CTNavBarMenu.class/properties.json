@@ -1,0 +1,15 @@
+{
+	"category" : "RP_ToDo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"navBarMenuContent",
+		"navBarMenuRightContent" ],
+	"name" : "CTNavBarMenu",
+	"pools" : [
+		 ],
+	"super" : "WAComponent",
+	"type" : "normal" }

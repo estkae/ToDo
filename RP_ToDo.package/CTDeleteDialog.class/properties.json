@@ -1,0 +1,14 @@
+{
+	"category" : "RP_ToDo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"task" ],
+	"name" : "CTDeleteDialog",
+	"pools" : [
+		 ],
+	"super" : "WAComponent",
+	"type" : "normal" }

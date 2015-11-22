@@ -1,0 +1,16 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"completeTask" : "RichardPillar 6/25/2015 16:28",
+		"deleteTask" : "RichardPillar 6/25/2015 16:33",
+		"initialize" : "RichardPillar 6/25/2015 15:33",
+		"noteComponent" : "RichardPillar 1/21/2015 16:42",
+		"noteComponent:" : "RichardPillar 1/21/2015 16:42",
+		"renderContentOn:" : "RichardPillar 9/3/2015 17:15",
+		"renderToDoTaskActionsOn:" : "RichardPillar 7/13/2015 17:57",
+		"renderToDoTaskDescriptionOn:" : "RichardPillar 9/9/2015 08:47",
+		"renderToDoTaskNote:On:" : "RichardPillar 7/13/2015 17:46",
+		"renderToDoTaskNotesOn:" : "RichardPillar 10/2/2015 20:52",
+		"task" : "RichardPillar 1/21/2015 16:51",
+		"task:" : "RichardPillar 1/21/2015 16:51" } }

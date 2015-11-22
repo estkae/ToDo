@@ -1,0 +1,19 @@
+{
+	"category" : "RP_ToDo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"status",
+		"deadline",
+		"taskDescription",
+		"id",
+		"taskName",
+		"notes" ],
+	"name" : "CTTask",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

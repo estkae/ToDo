@@ -1,0 +1,16 @@
+{
+	"category" : "RP_ToDo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"bodyComponent",
+		"navBarComponent",
+		"aboutComponent" ],
+	"name" : "CTLoggedInComponent",
+	"pools" : [
+		 ],
+	"super" : "WAComponent",
+	"type" : "normal" }

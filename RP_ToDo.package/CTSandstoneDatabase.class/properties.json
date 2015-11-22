@@ -1,0 +1,14 @@
+{
+	"category" : "RP_ToDo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CTSandstoneDatabase",
+	"pools" : [
+		 ],
+	"super" : "CTDatabase",
+	"type" : "normal" }

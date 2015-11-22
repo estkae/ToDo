@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addTask:toUser:" : "RichardPillar 10/8/2014 12:46",
+		"addUser:" : "RichardPillar 10/8/2014 12:47",
+		"connect" : "RichardPillar 10/1/2014 15:52",
+		"connectionFailed" : "RichardPillar 10/1/2014 15:52",
+		"connectionFailed:" : "RichardPillar 10/8/2014 12:47",
+		"disconnect" : "RichardPillar 10/1/2014 15:52",
+		"findUserByEmail:" : "RichardPillar 10/8/2014 12:48",
+		"initialize" : "RichardPillar 10/13/2014 10:26",
+		"updateTask:" : "RichardPillar 10/8/2014 12:49" } }

@@ -1,0 +1,22 @@
+{
+	"category" : "RP_ToDo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"user",
+		"userId",
+		"email",
+		"password",
+		"repeatPassword",
+		"navBarComponent",
+		"aboutComponent",
+		"messageComponent",
+		"sha1" ],
+	"name" : "CTRegisterComponent",
+	"pools" : [
+		 ],
+	"super" : "WAComponent",
+	"type" : "normal" }

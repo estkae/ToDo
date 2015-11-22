@@ -1,0 +1,14 @@
+{
+	"category" : "RP_ToDo",
+	"classinstvars" : [
+		"Users" ],
+	"classvars" : [
+		"WriteMutex" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CTImageDatabase",
+	"pools" : [
+		 ],
+	"super" : "CTDatabase",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+accessing
+navBarMenuRight
+	
+	^ navBarMenuRight

@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"aboutComponent" : "RichardPillar 12/24/2014 11:26",
+		"aboutComponent:" : "RichardPillar 12/24/2014 11:26",
+		"bodyComponent" : "RichardPillar 9/9/2014 17:12",
+		"bodyComponent:" : "RichardPillar 9/9/2014 17:12",
+		"children" : "RichardPillar 12/24/2014 11:26",
+		"initialize" : "RichardPillar 12/24/2014 11:27",
+		"navBarComponent" : "RichardPillar 9/9/2014 17:12",
+		"navBarComponent:" : "RichardPillar 9/9/2014 17:12",
+		"renderContentOn:" : "RichardPillar 12/24/2014 11:27",
+		"style" : "RichardPillar 10/24/2014 09:32",
+		"updateRoot:" : "RichardPillar 10/25/2015 18:39" } }
