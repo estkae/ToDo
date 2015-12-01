@@ -1,5 +1,7 @@
 {
 	"class" : {
+		"applicationNamed:" : "RichardPillar 11/30/2015 19:30",
 		"canBeRoot" : "RichardPillar 9/9/2014 16:56" },
 	"instance" : {
-		"go" : "RichardPillar 10/8/2014 12:51" } }
+		"go" : "RichardPillar 10/8/2014 12:51",
+		"initialRequest:" : "RichardPillar 11/30/2015 20:05" } }
