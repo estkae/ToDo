@@ -11,7 +11,8 @@
 		"taskDescription",
 		"id",
 		"taskName",
-		"notes" ],
+		"notes",
+		"inBacklog" ],
 	"name" : "CTTask",
 	"pools" : [
 		 ],

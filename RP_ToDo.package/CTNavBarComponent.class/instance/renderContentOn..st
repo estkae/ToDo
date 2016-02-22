@@ -13,6 +13,7 @@ renderContentOn: html
 						with: [ 
 							html anchor 
 								class: 'navbar-brand';
+								style: 'font-style: italic;';
 								url: 'http://www.developontheweb.co.uk/seaside.html';
 								target: '_blank';
 								with: 'Top-5'

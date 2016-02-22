@@ -13,7 +13,7 @@ renderContentOn: html
 						autofocus;
 						attributeAt: 'autocomplete' put: 'off';
 						placeholder: 'Add a Note';
-						callback: [ :value | self processInput: value ].
+						callback: [ :value | self processDescriptionInput: value ].
 				].
 
 			html div	

@@ -41,6 +41,10 @@ renderContentOn: html
 							class: 'col-md-1'.	
 					].
 			].
+		
+		html div 
+			class: 'row';
+			id: 'task-entry'.
 				
 		html div 
 			class: 'container';
@@ -49,4 +53,11 @@ renderContentOn: html
 				html section 
 					class: 'task-list';
 					with: self listComponent.	
-			].			
+			].	
+			
+		html div 
+			class: 'container';
+			with: [  
+				html section
+				with: self backlogComponent.
+			]			

@@ -27,7 +27,7 @@ renderToDoTaskDescriptionOn: html.
 				class: 'col-md-1';
 				with: [  
 					html anchor 
-						class: 'expand';														
+						class: 'btn expand';														
 						with: [ 
 							html span 
 								class: 'fa';
