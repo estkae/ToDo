@@ -1,18 +1,18 @@
 accessing
 renderNoteOn: html 
 
-	"this does work - sort of."
+	"Can I remove this ....."
 	html div 
 		class: 'row';
 		with: [  
 			html div
-				class: 'col-md-1'.
+				class: 'col s1'.
 			html div 
-				class: 'col-md-10';
+				class: 'col s10';
 				class: 'note';
 				with: 'This is my note.'.
 			html div 
-				class: 'col-md-1'.		
+				class: 'col s1'.		
 		].	
 
 

@@ -2,7 +2,7 @@ accessing
 validateRegistration
 
 	| myUser |
-	
+self halt.	
 	self userId isEmptyOrNil 
 		ifTrue: [ ^ self messageComponent errorMessage: 'A User Id needs to be entered'   ].
 	self email isEmptyOrNil 

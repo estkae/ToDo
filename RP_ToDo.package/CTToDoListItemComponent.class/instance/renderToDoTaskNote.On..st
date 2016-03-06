@@ -5,11 +5,11 @@ renderToDoTaskNote: aNote On: html
 		class: 'row';
 		with: [  
 			html div
-				class: 'col-md-1'.
+				class: 'col s1'.
 			html div 
-				class: 'col-md-10';
+				class: 'col s10';
 				class: 'note';
 				with: aNote taskNote.
 			html div 
-				class: 'col-md-1'.		
+				class: 'col s1'.		
 		].			

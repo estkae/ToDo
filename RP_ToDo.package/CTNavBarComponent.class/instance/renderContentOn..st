@@ -2,8 +2,6 @@ rendering
 renderContentOn: html
 
 	html navigation  
-		class: 'navbar';
-		class: 'navbar-inverse';
 		with: [ 
 			html div 
 				class: 'container';

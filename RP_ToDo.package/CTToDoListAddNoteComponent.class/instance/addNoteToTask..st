@@ -11,7 +11,6 @@ addNoteToTask: aTask
 
 	"update the db"
 	self session database addNote: self note toTask: aTask forUser: self session user.
-	
+
 	"update the note component"
 	self noteComponent note: self note. 
-	self noteComponent parentTask: self task.

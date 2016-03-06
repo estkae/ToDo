@@ -3,10 +3,9 @@ addNote: aNote toTask: aTask forUser: aUser
 	
 	| tasks |
 	
-	aNote parentTask: aTask.
-	
 	"find the task that I want to add a note too"
 	tasks := aUser tasks select: [ :each | each  id = aTask id ].	
+		
 	( tasks at: 1 ) notes add: aNote.
 
 	"save the updated user data"

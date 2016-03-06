@@ -3,61 +3,64 @@ renderContentOn: html
 
 	html div 
 		class: 'row';
-		with: [ 
+		with: [
 			html div 
-				class: 'container';
-				with: [ 	
-					html div 
-						class: 'todo-list';
-						class: 'col-md-12';
-						with: [ 
-							html div 
-								class: 'todo-header';
-								with: [ 
-									html heading
-										class: 'center-heading';
-										with: [ 
-											html span 
-												with: 'Top-5'
-										]
-								]
-						]
-				]
+				class: 'col s8 offset-s4';
+				with: [
+					html span
+					style: 'font-size:96px;font-family: ''Exo 2'''; 					
+					with: 'Top-5'
+				]  
 		].	
-		
+				
 		html div
 			class: 'row';
 			with: [ 							
 				html div
-					class: 'container'; 
+					class: ' col s8 offset-s2'; 
 					class: 'todo-input';
 					with: [ 
 						html div 
-							class: 'col-md-1'.
-						
-						self renderTaskInputOn: html.
-						
-						html div 
-							class: 'col-md-1'.	
+							class: 'col s12';
+							with: [  self renderTaskInputOn: html ].						
 					].
 			].
 		
 		html div 
 			class: 'row';
-			id: 'task-entry'.
+			style: 'margin-bottom:5px;';
+			with: [
+				html div 
+					class: 'col s8 offset-s2';  
+					id: 'task-entry'
+			].		
 				
 		html div 
-			class: 'container';
+			class: 'row';
 			class: 'todo-list';
 			with: [ 
-				html section 
-					class: 'task-list';
-					with: self listComponent.	
+				html div
+					class: 'col s8 offset-s2';
+					with: [ 
+						html div 
+							with: [
+								html heading level: 3; 
+									style: 'margin-top:0.6rem;';
+									with: [
+										html span 
+											style: 'border-bottom: 2px solid lightblue;';
+											with: 'Task List'.  
+									].		
+							].
+						html section 
+							class: 'task-list';
+							with: self listComponent.
+					]			
 			].	
 			
-		html div 
+		"html div 
 			class: 'container';
 			with: [  
 				html section
 				with: self backlogComponent.
-			]			
+			]"			

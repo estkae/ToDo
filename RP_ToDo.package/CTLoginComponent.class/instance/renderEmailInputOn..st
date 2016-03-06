@@ -2,21 +2,23 @@ accessing
 renderEmailInputOn: html
 
 	html div 
-		class: 'form-group';
+		class: 'row';
 		with: [ 
-			html label
-				class: 'control-label';
-				class: 'col-md-3';
-				with: [ 
-					html text: 'Email :'.
-				].
 			html div 
-				class: 'col-md-6';
-				with: [ 	
+				class: 'input-field col s8';
+				with: [ 
+					html italic 
+						class: 'material-icons prefix';
+						with: 'account_circle'.
 					html textInput 
-						class: 'form-control';
+						class: 'validate';
+						id: 'icon-prefix';
 						autofocus;
+						attributeAt: 'type' put: 'email';
 						attributeAt: 'autocomplete' put: 'off';
-						on: #email of: self.
-					]	
+						on: #email of: self.				
+					html label 
+						attributeAt: 'for' put: 'icon-prefix';
+						with: 'Email'.	
+				].	
 		] 

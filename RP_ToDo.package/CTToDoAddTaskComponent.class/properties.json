@@ -1,0 +1,18 @@
+{
+	"category" : "RP_ToDo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"messageComponent",
+		"description",
+		"targetDate",
+		"priority",
+		"backlog" ],
+	"name" : "CTToDoAddTaskComponent",
+	"pools" : [
+		 ],
+	"super" : "WAComponent",
+	"type" : "normal" }

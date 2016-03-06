@@ -8,12 +8,7 @@
 	"instvars" : [
 		"listComponent",
 		"backlogComponent",
-		"messageComponent",
-		"task",
-		"description",
-		"targetDate",
-		"priority",
-		"backlog" ],
+		"messageComponent" ],
 	"name" : "CTToDoComponent",
 	"pools" : [
 		 ],

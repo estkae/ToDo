@@ -8,8 +8,6 @@
 	"instvars" : [
 		"email",
 		"password",
-		"navBarComponent",
-		"aboutComponent",
 		"messageComponent",
 		"sha1" ],
 	"name" : "CTLoginComponent",

@@ -3,43 +3,59 @@ renderContentOn: html
 
 	html div 
 		class: 'row';
-		with: self navBarComponent.
+		with: [
+			html div 
+				class: 'col s6 offset-s5';
+				with: [
+					html span
+					style: 'font-size:96px;font-family: ''Exo 2'''; 					
+					with: 'Top-5'
+				]  
+		].
 
 	html div 
-		class: 'container';
+		class: 'row';
 		with: [ 
-			html div 
-				class: 'col-md-3'.	
+			html div
+				class: 'col s8 offset-s3';
+				with: [  
 			html div 
 				class: 'login-form';
-				class: 'col-md-8';
-				with: [ 
-					html div 
-						class: 'register-header';
-						with: [ 
-							html heading
-								with: [ 
-									html span 
-										class: 'form-header';
-										with: 'Register'
-								].
+					with: [ 
+						html div 
+							with: [ 
+								html heading
+									with: [ 
+										html span 
+											class: 'form-header';
+											with: 'Register'
+									]
+								]
 						].
 					html div 
-						with: self messageComponent.
-	 		 		html form
-						class: 'form-horizontal';
-						with: [ 
-							self renderNameInputOn: html.
-							self renderEmailInputOn: html.
-							self renderPasswordInputOn: html.
-                                          self renderRepeatedPasswordInputOn: html.
-							self renderButtonsOn: html.	
+						with: [  	
+							html div
+								class: 'col s12'; 
+								with: self messageComponent.
+	 		 				html form
+								class: 'form form-horizontal';
+								with: [ 
+									html div 
+										class: 'col s12';
+										with: [ self renderNameInputOn: html ].
+									html div 
+										class: 'col s12';	
+										with: [ self renderEmailInputOn: html ].
+									html div 
+										class: 'col s12';	
+										with: [ self renderPasswordInputOn: html ].
+									html div 
+										class: 'col s12';	
+        		                  	with: [ self renderRepeatedPasswordInputOn: html ].
+									html div 
+										class: 'col s12';	
+										with: [ self renderButtonsOn: html ].	
+								]		
 						]
 				].
-			html div 
-				class: 'col-md-3'.
-		].
-	
-	html div 
-		class: 'row';
-		with: self aboutComponent.	
+		].	

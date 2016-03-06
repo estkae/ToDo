@@ -2,18 +2,21 @@ accessing
 renderPasswordInputOn: html
 
 	html div 
-		class: 'form-group';
+		class: 'row';
 		with: [ 
-			html label
-				class: 'control-label';
-				class: 'col-md-3';
-				with: [ html text: 'Password :' ].
 			html div 
-				class: 'col-md-6';
-				with: [ 	
+				class: 'input-field col s8';
+				with: [ 
+					html italic 
+						class: 'material-icons prefix';
+						with: 'vpn_key'.	
 					html passwordInput 
-						class: 'form-control';
-						"callback: [ :value | self password: ( CTUser hashPassword: value ) ];"
+						class: 'validate';
+						id: 'icon-prefix';
+						attributeAt: 'autocomplete' put: 'off';
 						on: #password of: self.
-				].
+					html label 
+						attributeAt: 'for' put: 'icon-prefix';
+						with: 'Password'.	
+				].	
 		] 

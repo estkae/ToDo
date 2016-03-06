@@ -9,4 +9,5 @@ registerUser
 	self user userName: self userId.
 	
 	self session database addUser: self user.
+	
 	self answer: self user.

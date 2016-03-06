@@ -1,0 +1,24 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addTask" : "RichardPillar 3/3/2016 17:23",
+		"backlog" : "RichardPillar 3/3/2016 15:38",
+		"backlog:" : "RichardPillar 3/3/2016 15:38",
+		"description" : "RichardPillar 3/3/2016 15:38",
+		"description:" : "RichardPillar 3/3/2016 15:38",
+		"initialize" : "RichardPillar 3/3/2016 14:37",
+		"messageComponent" : "RichardPillar 3/3/2016 14:37",
+		"messageComponent:" : "RichardPillar 3/3/2016 14:37",
+		"priority" : "RichardPillar 3/3/2016 15:38",
+		"priority:" : "RichardPillar 3/3/2016 15:38",
+		"renderAddTaskButtonsOn:" : "RichardPillar 3/6/2016 21:51",
+		"renderAddTaskDateOn:" : "RichardPillar 3/3/2016 14:39",
+		"renderAddTaskDescriptionOn:" : "RichardPillar 3/3/2016 14:38",
+		"renderAddTaskSelectAddToBacklogOn:" : "RichardPillar 3/3/2016 17:12",
+		"renderAddTaskSelectPriorityOn:" : "RichardPillar 3/3/2016 14:39",
+		"renderContentOn:" : "RichardPillar 3/3/2016 14:36",
+		"targetDate" : "RichardPillar 3/3/2016 15:38",
+		"targetDate:" : "RichardPillar 3/3/2016 15:38",
+		"taskPriorities" : "RichardPillar 3/3/2016 15:40",
+		"validateAddTask" : "RichardPillar 3/3/2016 15:53" } }

@@ -3,41 +3,55 @@ renderContentOn: html
 
 	html div 
 		class: 'row';
-		with: self navBarComponent.
-
-	html div 
-		class: 'container';
-		with: [ 
+		with: [
 			html div 
-				class: 'col-md-3'.	
-			html div 
-				class: 'login-form';
-				class: 'col-md-6';
-				with: [ 
-					html div 
-						class: 'login-header';
-						with: [ 
-							html heading
-								with: [ 
-									html span 
-										class: 'form-header';
-										with: 'Login'
-								].
-						].
-					html div 
-						with: self messageComponent.
-	 		 		html form
-						class: 'form-horizontal';
-						with: [ 
-							self renderEmailInputOn: html.
-							self renderPasswordInputOn: html.
-							self renderButtonsOn: html.	
-						]
-				].
-			html div 
-				class: 'col-md-3'.
+				class: 'col s6 offset-s5';
+				with: [
+					html span
+					style: 'font-size:96px;font-family: ''Exo 2'''; 					
+					with: 'Top-5'
+				]  
 		].
 	
 	html div 
 		class: 'row';
-		with: self aboutComponent.	
+		with: [ 
+			html div 
+				class: 'col s8 offset-s3';
+				with: [ 
+					html div 
+						class: 'login-form';
+						with: [ 
+							html div 
+								with: [ 
+									html heading level: 2;
+										with: [ 
+											html span 
+												class: 'form-header';
+												with: 'Login'
+										].
+								].
+							html div 
+								with: [ 
+									html div 
+										class: 'col s12';
+										with: self messageComponent.
+	 		 						html form
+										class: 'form form-horizontal';
+										with: [ 
+											html div 
+												class: 'col s12';
+												with: [ self renderEmailInputOn: html ].
+											html div 
+												class: 'col s12';
+												with: [ self renderPasswordInputOn: html ].
+											html div 
+												class: 'col s12';
+												with: [ self renderButtonsOn: html ].	
+										]
+								].	
+						].		
+				].
+			html div 
+				class: 'col s3'.
+		].

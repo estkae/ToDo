@@ -5,9 +5,11 @@ renderContentOn: html
 	html div
 		class: 'message';
 		class: self messageType, 'Message';
+		style: 'margin-bottom: 15px;';
 		with: [
 			html span
 				class: 'messageSpan';  
+				style: 'font-size:22px;';
 				with: self messageString.
 		].	
 	self wasShown: true.

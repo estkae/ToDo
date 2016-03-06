@@ -1,41 +1,29 @@
 as yet unclassified
 renderTaskInputOn: html
 
-	|  numberOfTasks |
-	numberOfTasks := self session database numberOfActiveTasksForUser: self session user.
-		
+	| myAddTask |
+	myAddTask := CTToDoAddTaskComponent new.
+	
 	html div 
 		with: [ 
-			numberOfTasks < 5
-			ifTrue: [ 			
-				html div	
-					class: 'col-md-1';
-					class: 'task-link';
-					with: [											
-						html anchor
-							class: 'btn btn-primary btn-lg btn-top add-task-button';
-							onClick: ( ( html jQuery ajax )
-								script: [ :s |
-									s << ( ( s jQuery class: 'task-data' ) hide: 0.4 seconds ).
-									s << ( ( s jQuery id: 'task-entry' ) load html: [ :r | self renderAddTaskOn: r ] ).   
-									s << ( ( s jQuery class: 'add-task-button' ) addClass: 'disabled' ).   
-									s << ( ( s jQuery class: 'expand' ) addClass: 'disabled' ). 
-									s << ( ( s jQuery: 'span.fa' ) removeClass: 'fa-minus'; addClass: 'fa-plus' ).  
-								]
-							);
-							with: 'Add a New Task'.																														
-					].					
-				]
-			ifFalse: [ 
-				html div 
-					class: 'col-md-9';
-					with: [ 	
-						html textInput 
-							class: 'form-control';
-							class: 'input-lg';
-							class: 'task-input';
-							attributeAt: 'disabled' put: 'disabled';	
-							placeholder: 'Complete / Delete current tasks'
-					].					
-				].
-			].	
+			html div	
+				class: 'task-link';
+				with: [											
+					html anchor
+						class: 'btn-large add-task-button';
+						style: 'text-decoration:none;';
+						onClick: ( ( html jQuery ajax )
+							script: [ :s |
+								s << ( ( s jQuery class: 'task-data' ) hide: 0.4 seconds ).
+								s << ( ( s jQuery class: 'task-data-notes' ) hide: 0.2 seconds ).
+								s << ( ( s jQuery id: 'task-entry' ) load html: [ :r | r render: myAddTask] ).  
+								s << ( ( s jQuery class: 'add-task-button' ) addClass: 'disabled' ).   
+								s << ( ( s jQuery class: 'expand' ) addClass: 'expand-disabled' ).	
+								s << ( ( s jQuery class: 'expand' ) removeClass: 'zoom-out' ).	
+								s << ( ( s jQuery class: 'expand' ) addClass: 'zoom-in' ).	
+								s << ( ( s jQuery class: 'task-notes-expand' ) text: 'zoom_in' ).								
+							]
+						);
+						with: 'Add a New Task'.																														
+				].									
+		].	

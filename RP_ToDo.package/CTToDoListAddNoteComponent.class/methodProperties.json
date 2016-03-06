@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addNoteToTask:" : "RichardPillar 9/15/2015 19:34",
+		"addNoteToTask:" : "RichardPillar 3/6/2016 21:00",
 		"id" : "RichardPillar 12/11/2014 14:54",
 		"id:" : "RichardPillar 12/11/2014 14:54",
 		"initialize" : "RichardPillar 9/14/2015 21:37",
@@ -16,10 +16,11 @@
 		"noteText:" : "RichardPillar 9/11/2015 17:42",
 		"processDescriptionInput:" : "RichardPillar 2/9/2016 15:21",
 		"processInput:" : "RichardPillar 9/4/2015 16:55",
-		"renderContentOn:" : "RichardPillar 2/9/2016 15:21",
+		"processNoteInput:" : "RichardPillar 3/4/2016 16:21",
+		"renderContentOn:" : "RichardPillar 3/4/2016 16:21",
 		"renderNewNoteOn:" : "RichardPillar 10/2/2015 20:26",
-		"renderNoteOn:" : "RichardPillar 9/14/2015 20:56",
-		"renderNumberOfNotesOn:" : "RichardPillar 9/7/2015 08:58",
+		"renderNoteOn:" : "RichardPillar 2/26/2016 12:19",
+		"renderNumberOfNotesOn:" : "RichardPillar 3/4/2016 15:59",
 		"style" : "RichardPillar 9/4/2015 10:06",
 		"task" : "RichardPillar 9/9/2015 17:29",
 		"task:" : "RichardPillar 9/9/2015 17:29" } }

@@ -1,0 +1,14 @@
+{
+	"category" : "RP_ToDo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CTToDoListComponentHeader",
+	"pools" : [
+		 ],
+	"super" : "WAComponent",
+	"type" : "normal" }

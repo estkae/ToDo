@@ -2,22 +2,22 @@ rendering
 renderButtonsOn: html
 
 	html div 
-		class: 'form-group';
 		with: [ 
 			html div
-				class: 'col-md-offset-3 col-md-6';
+				class: 'col s6';
 				with: [ 
-					html submitButton 
-						class: 'btn btn-primary login-button'; 
+					html button 
+						class: 'btn-large waves-effect waves-light'; 
 						callback: [ 
 							self validateRegistration
 						]; 
-						value: 'Register'.
-					html submitButton 
-						class: 'btn btn-default login-button'; 
+						with: 'Register'.
+					html button 
+						class: 'btn-large waves-effect waves-light'; 
+						style: 'margin-left: 12px;';
 						callback: [ 
 							self answer: nil
 						]; 
-						value: 'Cancel'				
+						with: 'Cancel'.				
 				]
-		] 
+		].

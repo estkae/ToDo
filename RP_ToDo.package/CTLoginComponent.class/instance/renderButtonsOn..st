@@ -2,22 +2,22 @@ accessing
 renderButtonsOn: html
 
 	html div 
-		class: 'form-group';
 		with: [ 
 			html div
-				class: 'col-md-offset-3 col-md-6';
+				class: 'col s6';
 				with: [ 
 					html button 
-						class: 'btn btn-primary login-button'; 
+						class: 'btn-large waves-effect waves-light'; 
 						callback: [ 
 							self validateLogin
 						]; 
-						value: 'Login'.
+						with: 'Login'.
 					html button 
-						class: 'btn btn-default login-button'; 
+						class: 'btn-large waves-effect waves-light'; 
+						style: 'margin-left: 12px;';
 						callback: [ 
 							self registerUser
 						]; 
-						value: 'Register'				
+						with: 'Register'.				
 				]
-		] 
+		].

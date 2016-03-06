@@ -2,21 +2,22 @@ rendering
 renderNameInputOn: html
 
 	html div 
-		class: 'form-group';
+		class: 'row';
 		with: [ 
-			html label
-				class: 'control-label';
-				class: 'col-md-3';
-				with: [ 
-					html text: 'User Id :'.
-				].
 			html div 
-				class: 'col-md-3';
-				with: [ 	
+				class: 'input-field col s8';
+				with: [ 
+					html italic 
+						class: 'material-icons prefix';
+						with: 'perm_identity'.	
 					html textInput 
-						class: 'form-control';
+						class: 'validate';
+						id: 'icon-prefix';
 						autofocus;
 						attributeAt: 'autocomplete' put: 'off';
 						on: #userId of: self.
-				]
+					html label 
+						attributeAt: 'for' put: 'icon-prefix';
+						with: 'User Id'.	
+				].	
 		] 

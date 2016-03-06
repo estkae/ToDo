@@ -1,10 +1,9 @@
 accessing
 addTask
-
-	"check if description is populated - only continue if okay"
-	self description = ''
-		ifTrue: [ ^ ''  ].
 			
 	self task: CTTask new.
 	task taskDescription: self description.
+	task deadline: self targetDate.
+	task priority: self priority.
+	task inBacklog: self addToBacklog.
  	self session database addTask: self task toUser: self session user.
