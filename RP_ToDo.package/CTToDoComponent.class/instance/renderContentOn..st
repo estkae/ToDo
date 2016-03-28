@@ -5,10 +5,10 @@ renderContentOn: html
 		class: 'row';
 		with: [
 			html div 
-				class: 'col s8 offset-s4';
+				class: 'col s6 offset-s5';
 				with: [
 					html span
-					style: 'font-size:96px;font-family: ''Exo 2'''; 					
+					style: 'font-size:72px;font-family: ''Exo 2'''; 					
 					with: 'Top-5'
 				]  
 		].	
@@ -58,9 +58,15 @@ renderContentOn: html
 					]			
 			].	
 			
-		"html div 
-			class: 'container';
+		html div 
+			class: 'col s8 offset-s2';
 			with: [  
 				html section
-				with: self backlogComponent.
-			]"			
+					class: 'non-active-tasks';
+					style: 'display:none;';
+					with: [
+						html div
+							class: 'backog-tasks' 
+							"with: self backlogComponent"
+					]		
+			]			 

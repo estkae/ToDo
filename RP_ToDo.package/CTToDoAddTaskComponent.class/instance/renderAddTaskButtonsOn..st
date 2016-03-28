@@ -26,7 +26,11 @@ renderAddTaskButtonsOn: html
 										myTask := self addTask.	
 										taskItemComponent := CTToDoListItemComponent new.
 										taskItemComponent task: myTask.
-										s << ( ( s jQuery class: 'task-list' ) append: [ :r | r render: taskItemComponent ] ).
+										"only append if not being added to the task backlog"
+										( self backlog = 'No' )
+											ifTrue: [ 
+												s << ( ( s jQuery class: 'task-list' ) append: [ :r | r render: taskItemComponent ] )
+											].	
 										s << ( ( s jQuery class: 'task-entry-block' ) remove ).   
 										s << ( ( s jQuery class: 'add-task-button' ) removeClass: 'disabled' ). 
 										s << ( ( s jQuery class: 'expand' ) removeClass: 'expand-disabled' ). 

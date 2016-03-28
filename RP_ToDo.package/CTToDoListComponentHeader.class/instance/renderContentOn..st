@@ -3,9 +3,10 @@ renderContentOn: html
 
 	html div 
 		class: 'row task-header';
+		class: 'col s11';
 		with: [ 
 			html div 
-				with: [ 			
+				with: [ 		
 					html div 
 						class: 'col s4';
 						with: [ 
@@ -23,7 +24,7 @@ renderContentOn: html
 							with: [ 
 								html span 
 								style: 'border-bottom: 2px solid lightgray;'; 
-								with: 'Priority'.
+								with: 'Deadline'.
 							]	
 						].	
 					html div 
@@ -33,7 +34,7 @@ renderContentOn: html
 							with: [ 
 								html span 
 								style: 'border-bottom: 2px solid lightgray;'; 
-								with: 'Deadline'.
+								with: 'Priority'.
 							]	
 						].		
 					html div 
@@ -55,11 +56,6 @@ renderContentOn: html
 								style: 'border-bottom: 2px solid lightgray;'; 
 								with: '#Notes'.
 							]	
-						].	
-					html div 
-						class: 'col s1';	
-						class: 'task-head-col'.			
-					html div 
-						class: 'col s1'.			
+						].										
 				].
 		].	

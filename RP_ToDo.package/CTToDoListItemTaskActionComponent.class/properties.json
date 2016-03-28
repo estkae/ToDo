@@ -1,0 +1,15 @@
+{
+	"category" : "RP_ToDo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"task",
+		"taskAction" ],
+	"name" : "CTToDoListItemTaskActionComponent",
+	"pools" : [
+		 ],
+	"super" : "WAComponent",
+	"type" : "normal" }

@@ -4,8 +4,8 @@ validateLogin
 	| user myPassword |
 
 	user := self session findUserByEmail: self email.
-	myPassword :=  sha1 hashMessage: self password.
+	myPassword := self password.
 
-	( user notNil and: [ user password = myPassword asString ] )
+	( user notNil and: [ user password = myPassword ] )
 		ifTrue: [ self answer: user ]
 		ifFalse: [ self loginFailed ].

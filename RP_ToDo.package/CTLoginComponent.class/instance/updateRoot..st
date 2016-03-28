@@ -7,8 +7,6 @@ updateRoot: anHtmlRoot
 		url: 'https://fonts.googleapis.com/icon?family=Material+Icons'.	
 	anHtmlRoot stylesheet
 		url: 'http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css'.
-	"anHtmlRoot stylesheet
-		url: 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'."
 	anHtmlRoot stylesheet
 		url: 'https://fonts.googleapis.com/css?family=Exo+2'.			
 	anHtmlRoot javascript

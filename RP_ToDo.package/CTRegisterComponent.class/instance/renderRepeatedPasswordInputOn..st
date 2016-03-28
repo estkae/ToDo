@@ -1,6 +1,8 @@
 rendering
 renderRepeatedPasswordInputOn: html
 
+	| myPassword |
+	
 	html div 
 		class: 'row';
 		with: [ 
@@ -14,7 +16,8 @@ renderRepeatedPasswordInputOn: html
 						class: 'validate';
 						id: 'icon-prefix';
 						attributeAt: 'autocomplete' put: 'off';
-						on: #repeatPassword of: self.
+						"on: #repeatPassword of: self."
+						callback: [ :value | myPassword := self sha1 hashMessage: value. self repeatPassword: myPassword asInteger ].
 					html label 
 						attributeAt: 'for' put: 'icon-prefix';
 						with: 'Repeat Password'.	

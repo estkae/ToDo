@@ -14,8 +14,6 @@ renderToDoTaskNotesOn: html
 						class: 'no-notes';
 						with: [ 
 							html div
-								class: 'col s1'.
-							html div
 								class: 'col s10';
 								with: 'This task has no notes'.
 							html div 
@@ -36,9 +34,7 @@ renderToDoTaskNotesOn: html
 	html div 
 		class: 'row';
 		style: 'margin-bottom:5px;';
-		with: [
-			html div 
-				class: 'col s1'.			
+		with: [		
 			html div
 				class: 'col s10 note-action';
 				style: 'margin-bottom:20px;';
@@ -70,8 +66,6 @@ renderToDoTaskNotesOn: html
 		class: 'row note-input';
 		style: 'display:none';
 		with: [ 
-			html div
-				class: 'col s1'.	
 			html div 
 				class: 'col s10';
 				with: [ html render: self noteComponent  ].

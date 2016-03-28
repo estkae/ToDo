@@ -1,8 +1,8 @@
-as yet unclassified
+accessing
 doLogout
 	 
 	| url |
-	url := '/RP_ToDo'.
+	url := '/Top-5'.
 	self user: nil.
 	self unregister.
 	self requestContext redirectTo: url.

@@ -5,8 +5,6 @@ renderContentOn: html
 		class: 'row';
 		style: 'margin-bottom:5px;';
 		with: [  
-			html div
-				class: 'col s1'.
 			html div 
 				class: 'col s10';
 				class: 'note';

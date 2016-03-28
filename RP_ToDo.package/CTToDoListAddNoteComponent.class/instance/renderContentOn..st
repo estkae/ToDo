@@ -31,7 +31,7 @@ renderContentOn: html
 								serializeForm;
 								script: [ :s | 
 									self addNoteToTask: self task. 
-                         					s << ( ( s jQuery id: 'note-data-', self task id ) append: [ :r | self renderNewNoteOn: r ] ).
+                         	s << ( ( s jQuery id: 'note-data-', self task id ) append: [ :r | self renderNewNoteOn: r ] ).
      							];
 							onComplete: ( 
 								( ( ( html jQuery id: 'task-block', self task id ) find: '.numberofnotes' ) load html: [ :r | self renderNumberOfNotesOn: r ] ),	

@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"backlogItems",
+		"header" ],
 	"name" : "CTToDoBacklogComponent",
 	"pools" : [
 		 ],

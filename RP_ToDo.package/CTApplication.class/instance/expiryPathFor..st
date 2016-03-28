@@ -1,4 +1,4 @@
 as yet unclassified
-expiryPathFor: aRequest 
-
-	 ^aRequest url, '/expired'.
+expiryPathFor: aRequest
+	self halt.
+	^aRequest url , '?expired'
