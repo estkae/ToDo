@@ -8,8 +8,12 @@ updateRoot: anHtmlRoot
 	anHtmlRoot stylesheet
 		url: 'http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css'.
 	anHtmlRoot stylesheet
-		url: 'https://fonts.googleapis.com/css?family=Exo+2'.				
+		url: 'https://fonts.googleapis.com/css?family=Exo+2'.
+	anHtmlRoot stylesheet 
+		url: (CTToDoFileLibrary urlOf: #styleCss).						
 	anHtmlRoot javascript
 		url: 'http://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js'.
 	anHtmlRoot javascript
-		url: 'http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js'.		
+		url: 'http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js'.	
+	anHtmlRoot javascript 
+		url: (CTToDoFileLibrary urlOf: #mainJs)	

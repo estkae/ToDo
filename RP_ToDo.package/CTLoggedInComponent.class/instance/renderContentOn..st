@@ -28,16 +28,16 @@ renderContentOn: html
 							with: 'power_settings_new'  
 					].  
 				html anchor 
-					class: 'backlog tooltipped';
+					class: 'backlog tooltipped cd-btn';
 					style: 'text-decoration: none;cursor:pointer;margin-top:20px;';
 					attributeAt: 'data-position' put: 'right';
 					attributeAt: 'data-delay' put: '50';
 					attributeAt: 'data-tooltip' put: 'Backlog';
-					onClick: ( ( html jQuery ajax )
+					"onClick: ( ( html jQuery ajax )
 						script: [ :s | 
 							s << ( ( s jQuery class: 'non-active-tasks' ) show ). 
 						]	
-					);	
+					);	"
 					with: [
 						html italic 
 							class: 'material-icons';
@@ -61,4 +61,6 @@ renderContentOn: html
 	
 	html div 
 		class: 'row';
-		with: self bodyComponent.						
+		with: self bodyComponent.
+
+						

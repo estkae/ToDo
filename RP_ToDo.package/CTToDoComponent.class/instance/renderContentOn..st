@@ -57,16 +57,11 @@ renderContentOn: html
 							with: self listComponent.
 					]			
 			].	
-			
+		
 		html div 
-			class: 'col s8 offset-s2';
-			with: [  
-				html section
-					class: 'non-active-tasks';
-					style: 'display:none;';
-					with: [
-						html div
-							class: 'backog-tasks' 
-							"with: self backlogComponent"
-					]		
-			]			 
+			class: 'cd-panel from-right';
+			with: self backlogComponent.	
+
+		html div 
+			id: 'overlay';
+			style: 'display:none; z-index:200'.	 

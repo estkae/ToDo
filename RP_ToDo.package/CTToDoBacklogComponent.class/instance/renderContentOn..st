@@ -3,63 +3,44 @@ renderContentOn: html
 
 	| backlogCount listItem |
 	
-	html div
-		class: 'col-md-12';
-		with: [  
-			html div
-				class: 'col-md-5'.
+	"html div 
+		class: 'cd-panel-from-right';
+		with: ["
 			html div 
-				class: 'col-md-2 task-split'.
-			html div 
-				class: 'col-md-5'.		 
-		].				
-	
-	html div 
-		with: [
-			html heading level: 3; 
-			with: [
-				html span 
-					style: 'border-bottom: 2px solid lightblue;';
-					with: 'Task Backlog'. 
-				html span
-					style: 'margin-left:25px;'; 
-					with: [ 
-						html anchor
-							style: 'text-decoration:none;cursor:pointer;color:black;font-size:26px;';
-							onClick: ( ( html jQuery ajax )
-								script: [ :s | 
-									s << ( ( s jQuery class: 'non-active-tasks' ) hide: 0.1 seconds ). 
-								]	
-							);
-							with: [ 
-								html span 	
-									with: '( '.
-								html span 
-									style: 'border-bottom: 1px solid lightblue;';	
-									with: 'Close'.
-								html span 	
-									with: ' )'.	
-							]			 
-					]	 
-			].		
-		].
+				class: 'cd-panel-container';
+				with: [
+					html div 
+						class: 'cd-panel-content';
+						with: [
+							html anchor 
+								class: 'cd-panel-close';
+								url: '#0';	
+								with: [ 
+									"html italic 
+										class: 'material-icons';
+										style: 'font-size:3rem;color:black;cursor:pointer;margin-top:-5px;';
+										with: 'close' "
+ 								].
 
-	backlogCount := 0.
-	self backlogItems isEmpty 
-		ifTrue: [ 
-			self header: CTToDoListComponentHeaderEmpty new.
-			html render: header.
-	 	]
-		ifFalse: [
-			self header: CTToDoListComponentHeader new.
-			html render: header.	
-					
-			self backlogItems do: [ :each | 
-				( each status = 'Backlog' )
-				ifTrue: [ 
-					listItem := CTToDoListItemComponent new.
-					listItem task: each.
-					html render: listItem.
-				].	
-			]
-		].	
+							html div 
+								id: 'full-content';
+								"style: 'display:none;width:100%';"
+								style: 'width:100%';
+								with: [  
+										backlogCount := 0.
+										( self backlogItems isEmpty )
+											ifFalse: [					
+												self backlogItems do: [ :each | 
+													( each status = 'Backlog' )
+													ifTrue: [ 
+														listItem := CTToDoListItemComponent new.
+														listItem task: each.
+														html render: listItem.
+													].	
+												]
+											]
+								]  
+						].						  
+				].  
+		"]."
+	
