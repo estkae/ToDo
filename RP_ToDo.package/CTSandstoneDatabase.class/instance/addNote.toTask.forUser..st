@@ -1,4 +1,4 @@
-as yet unclassified
+adding
 addNote: aNote toTask: aTask forUser: aUser
 	
 	| myTask |

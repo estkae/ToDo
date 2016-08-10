@@ -13,6 +13,8 @@ validateEditTask
 			
 	"check that the date is in the future"			
 	myDate := Date today yyyymmdd.
-	( self targetDate < myDate ) ifTrue: [ ^ 'Error : the Date must be in the future.' ].
+	( self task deadline = self targetDate ) ifFalse: [
+		( self targetDate < myDate ) ifTrue: [ ^ 'Error : the Date must be in the future.' ]
+	].	
 				
 	^ ''.

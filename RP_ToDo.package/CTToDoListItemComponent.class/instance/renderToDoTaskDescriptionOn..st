@@ -1,14 +1,27 @@
 as yet unclassified
-renderToDoTaskDescriptionOn: html.
+renderToDoTaskDescriptionOn: html
 	
-"expand code was here ..."	
+	| myCurrentDate myDateClass myWidthClass |
+	myCurrentDate := Date new; today.
+	myCurrentDate yyyymmdd.
 	
+	( ( myCurrentDate yyyymmdd ) > self task deadline )
+		ifTrue: [ 
+			( self task status = 'Completed' ) 
+				ifTrue: [ myDateClass := 'teal lighten-5' ] 
+				ifFalse: [ myDateClass := 'red lighten-4' ]
+		]
+		ifFalse: [ myDateClass := 'teal lighten-5' ].
+	( self task status = 'Active' )
+		ifTrue: [ myWidthClass := 'col s4' ]
+		ifFalse: [ myWidthClass := 'col s6' ].
+
 	html div 
-		class: 'col s11 teal lighten-5';
-		style: 'padding-top:10px;padding-bottom:5px;margin-bottom:5px;';
+		class: 'col s11 ', ' task-details', self task id, ' ', myDateClass;
+		style: 'padding-top:15px;padding-bottom:10px;margin-bottom:5px;border:3px solid lightgray;border-radius:5px;';
 		with: [ 	
 			html div
-				class: 'col s4 description', self task id;
+				class: 'description', self task id, ' ', myWidthClass;	
 				style: 'font-size: 18px;font-family:Roboto;';
 				with: self task taskDescription. 	
 			html div 
@@ -19,10 +32,12 @@ renderToDoTaskDescriptionOn: html.
 				class: 'col s2 priority', self task id;
 				style: 'font-size: 18px;';
 				with: self task priority.	
-			html div 
-				class: 'col s2 status', self task id;
-				style: 'font-size: 18px;';
-				with: self task status.
+			( self task status = 'Active' ) ifTrue: [ 		
+				html div 
+					class: 'col s2 status', self task id;
+					style: 'font-size: 18px;';
+					with: self task status.
+			].	
 			html div 
 				class: 'col s1';
 				class: 'numberofnotes';
@@ -33,11 +48,4 @@ renderToDoTaskDescriptionOn: html.
 				]
 		].	
 	
-"	html div 
-		class: 'col s1';
-		class: 'numberofnotes';
-		with: [
-			html span
-			style: 'font-size: 18px;color:teal;'; 
-			with: '( ', self task numberOfNotes, ' )' .
-		]."			
+		

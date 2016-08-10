@@ -4,7 +4,7 @@ renderContentOn: html
 	| taskHeader activeTasks |
 			
 	html div 
-		class: 'modal-content';
+		class: 'action-modal-content';
 		with: [
 			html div 
 				class: 'row';
@@ -12,11 +12,14 @@ renderContentOn: html
 					html heading level: 4; 
 						with: [ 
 							html span 
-								class: 'task-action-text', self task id;
+								id: 'task-action-text';
 								style: 'border-bottom: 2px solid teal';
-								with: 'Action'
+								with: 'Task - ', self taskAction
 						]
-				].		
+				].	
+			html div
+				class: 'col s12'; 
+				with: self messageComponent.		
 			html div 
 				class: 'row';
 				with: [  
@@ -24,23 +27,23 @@ renderContentOn: html
 						class: 'col s12'; 
 						with: [
 							html paragraph 
-							style: 'font-size:22px;';
+							style: 'text-align:left;';
 							with: [
 								html span 
-									style: 'border-bottom: 1px solid teal;';
+									style: 'font-size:22px;border-bottom: 1px solid teal;';
 									with: 'Task'.  
 								html span 
-									style: 'color: gray;';
+									style: 'font-size:20px;color: gray;font-weight:300;';
 									with: ' : ', self task taskDescription.  
 							]		
 						]
 				].		
 			html div 
 				class: 'row';
-				style: 'margin-top:45px;';
+				style: 'margin-top:45px;text-align:left;';
 				with: [
 					html anchor
-						class: 'btn waves-effect modal-action modal-close task-action-button', self task id;
+						class: 'btn-large waves-effect task-action-button', self task id;
 						style: 'margin-left:15px;';		
 						onClick: ( ( html jQuery ajax )
 							script: [ :s |
@@ -64,13 +67,23 @@ renderContentOn: html
 											taskHeader := CTToDoListComponentHeaderEmpty new.
 											s << ( ( s jQuery class: 'task-header' ) remove ). 
 											s << ( ( s jQuery class: 'task-list' ) append: [ :r |  r render: taskHeader.  ] ).  
-										].									
+										].	
+								s << ( ( s jQuery id: 'top5-overlay' ) hide ).
+								s << ( ( s jQuery id: 'task-action-modal' ) hide ).
+								s << ( ( s jQuery class: 'action-modal-content' ) remove ).										
 							] 
 						);				
 						with: self taskAction.   
 					html anchor 
-						class: 'btn waves-effect modal-action modal-close';
+						class: 'btn-large waves-effect';
 						style: 'margin-left:15px;';
+						onClick: ( ( html jQuery ajax )
+							script: [ :s |
+								s << ( ( s jQuery id: 'top5-overlay' ) hide ).
+								s << ( ( s jQuery id: 'task-action-modal' ) hide ).
+								s << ( ( s jQuery class: 'action-modal-content' ) remove ).
+							]
+						);	
 						with: 'Cancel'													 
 				]			
 		].

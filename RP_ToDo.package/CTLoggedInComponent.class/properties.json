@@ -4,9 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "RichardPillar 7/5/2016 19:14",
 	"instvars" : [
-		"bodyComponent" ],
+		"bodyComponent",
+		"menuComponent" ],
 	"name" : "CTLoggedInComponent",
 	"pools" : [
 		 ],

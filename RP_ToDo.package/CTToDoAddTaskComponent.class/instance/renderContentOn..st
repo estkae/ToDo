@@ -13,6 +13,7 @@ renderContentOn: html
 				with: [ 
 					html div 
 						class: 'col s12';
+						style: 'border: 4px solid lightgray;border-radius:5px;background-color:#f5f5f5;';
 						with: [ 
 							html div 
 								class: 'login-form';
@@ -48,9 +49,5 @@ renderContentOn: html
 										]	
 								].		
 						].
-				].
-			html div 
-				class: 'col s12';
-				style: 'margin-top:10px;border-bottom:1px solid lightgray;'.
-						
+				].					
 		]. 

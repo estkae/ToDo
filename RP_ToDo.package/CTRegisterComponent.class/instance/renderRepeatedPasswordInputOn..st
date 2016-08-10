@@ -16,8 +16,8 @@ renderRepeatedPasswordInputOn: html
 						class: 'validate';
 						id: 'icon-prefix';
 						attributeAt: 'autocomplete' put: 'off';
-						"on: #repeatPassword of: self."
-						callback: [ :value | myPassword := self sha1 hashMessage: value. self repeatPassword: myPassword asInteger ].
+						on: #repeatPassword of: self.
+						"callback: [ :value | myPassword := self sha1 hashMessage: value. self repeatPassword: myPassword asInteger ]."
 					html label 
 						attributeAt: 'for' put: 'icon-prefix';
 						with: 'Repeat Password'.	

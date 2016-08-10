@@ -13,7 +13,7 @@ Primary style
 }
 
 *::after, *::before {
-  content: '';
+  content: '''';
 }
 /*
 body {
@@ -83,7 +83,6 @@ html, body {
   -moz-transition: visibility 0s 0.6s;
   transition: visibility 0s 0.6s;
   z-index: 200;
-  opacity: 0.8;
 }
 .cd-panel-close {
     z-index: 250;
@@ -233,68 +232,68 @@ html, body {
 
 .cd-panel-close {
   position: absolute;
-  top: 10;
-  right: 10;
+  top: 15px;
+  right: 15px;
   /* is this correct height: 100%; */
   height: 60px;
   width: 60px;
   /* image replacement */
   display: inline-block;
   overflow: hidden;
-  text-indent: 100%;
+  /*text-indent: 100%;*/
   white-space: nowrap;
 }
 .cd-panel-close::before, .cd-panel-close::after {
   /* close icon created in CSS */
-  position: absolute;
+/*  position: absolute;
   top: 22px;
   left: 20px;
   height: 3px;
   width: 20px;
-  background-color: #424f5c;
+  background-color: #424f5c;*/
   /* this fixes a bug where pseudo elements are slighty off position */
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+/*  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; */
 }
 .cd-panel-close::before {
-  -webkit-transform: rotate(45deg);
+/*  -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+  transform: rotate(45deg); */
 }
 .cd-panel-close::after {
-  -webkit-transform: rotate(-45deg);
+/*  -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  transform: rotate(-45deg); */
 }
 .no-touch .cd-panel-close:hover {
-  background-color: #424f5c;
+/*  background-color: #424f5c; */
 }
 .no-touch .cd-panel-close:hover::before, .no-touch .cd-panel-close:hover::after {
-  background-color: #ffffff;
+/*  background-color: #ffffff;
   -webkit-transition-property: -webkit-transform;
   -moz-transition-property: -moz-transform;
   transition-property: transform;
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+  transition-duration: 0.3s; */
 }
 .no-touch .cd-panel-close:hover::before {
-  -webkit-transform: rotate(220deg);
+/*  -webkit-transform: rotate(220deg);
   -moz-transform: rotate(220deg);
   -ms-transform: rotate(220deg);
   -o-transform: rotate(220deg);
-  transform: rotate(220deg);
+  transform: rotate(220deg); */
 }
 .no-touch .cd-panel-close:hover::after {
-  -webkit-transform: rotate(135deg);
+/*  -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   -o-transform: rotate(135deg);
-  transform: rotate(135deg);
+  transform: rotate(135deg); */
 }
 
 .cd-panel-container {
@@ -380,6 +379,62 @@ html, body {
     font-size: 1rem;
     line-height: 1.6;
   }
+}
+
+#overlay {  
+	width: 100%;
+	height: 100%;
+	z-index: 90;
+}
+
+.task-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0px 0px 25px gray;
+  visibility: hidden;
+  -webkit-transition: visibility 0s 0.6s;
+  -moz-transition: visibility 0s 0.6s;
+  transition: visibility 0s 0.6s;
+  z-index: 100;
+}
+/* overlay for task modals */
+.task-panel::after {
+  /* overlay layer */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: background 0.1s 0.1s;
+  -moz-transition: background 0.1s 0.1s;
+  transition: background 0.1s 0.1s;
+}
+.task-panel.is-visible {
+  visibility: visible;
+  -webkit-transition: visibility 0s 0s;
+  -moz-transition: visibility 0s 0s;
+  transition: visibility 0s 0s;
+}
+.task-panel.is-visible::after {
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transition: background 0.1s 0s;
+  -moz-transition: background 0.1s 0s;
+  transition: background 0.1s 0s;
+}
+.task-panel.is-visible .task-panel-close::before {
+  -webkit-animation: task-close-1 0.1s 0.1s;
+  -moz-animation: task-close-1 0.1s 0.1s;
+  animation: task-close-1 0.1s 0.1s;
+}
+.task-panel.is-visible .task-panel-close::after {
+  -webkit-animation: task-close-2 0.1s 0.1s;
+  -moz-animation: task-close-2 0.1s 0.1s;
+  animation: task-close-2 0.1s 0.1s;
 }
 	
 '

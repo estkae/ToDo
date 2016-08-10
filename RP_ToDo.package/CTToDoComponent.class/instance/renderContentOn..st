@@ -31,8 +31,12 @@ renderContentOn: html
 			style: 'margin-bottom:5px;';
 			with: [
 				html div 
-					class: 'col s8 offset-s2';  
-					id: 'task-entry'
+					class: 'col s8 offset-s2'; 
+					style: 'display:none;'; 
+					id: 'task-entry'";
+					with: [
+						html render: self taskAddComponent.   
+					]"
 			].		
 				
 		html div 
@@ -48,7 +52,7 @@ renderContentOn: html
 									style: 'margin-top:0.6rem;';
 									with: [
 										html span 
-											style: 'border-bottom: 2px solid lightblue;';
+											style: 'border-bottom: 4px solid lightblue;';
 											with: 'Task List'.  
 									].		
 							].
@@ -60,8 +64,7 @@ renderContentOn: html
 		
 		html div 
 			class: 'cd-panel from-right';
-			with: self backlogComponent.	
+			with: self sidebarComponent.	
 
 		html div 
-			id: 'overlay';
-			style: 'display:none; z-index:200'.	 
+			class: 'task-panel'.

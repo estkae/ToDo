@@ -12,13 +12,14 @@ validateRegistration
 	( myUser notNil )
 		ifTrue: [ ^ self messageComponent errorMessage: 'A user with this email already exists' ].
 		
-	self password isNumber 
-		ifFalse: [ ^ self messageComponent errorMessage: 'A Password needs to be entered'   ].
-	self repeatPassword isNumber 
-		ifFalse: [ ^ self messageComponent errorMessage: 'The Password needs to be repeated'   ].	
-		
+	self password size = 0 
+		ifTrue: [ ^ self messageComponent errorMessage: 'A Password needs to be entered'   ].
+	self password size < 8 
+		ifTrue: [ ^ self messageComponent errorMessage: 'A Password needs to be at least 8 characters in length'   ].
+	self repeatPassword size = 0 
+		ifTrue: [ ^ self messageComponent errorMessage: 'The Password needs to be repeated'   ].		
 	self repeatPassword = self password  
-		ifFalse: [ ^ self messageComponent errorMessage: 'The Password entries differ - please reenter.'   ].	
+		ifFalse: [ ^ self messageComponent errorMessage: 'The Password entries differ - please correct.'   ].	
 	
 	"assume valid details at this point"	
 	^ self registerUser.

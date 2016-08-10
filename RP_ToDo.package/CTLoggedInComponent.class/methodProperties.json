@@ -2,14 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"aboutComponent" : "RichardPillar 12/24/2014 11:26",
-		"aboutComponent:" : "RichardPillar 12/24/2014 11:26",
 		"bodyComponent" : "RichardPillar 9/9/2014 17:12",
 		"bodyComponent:" : "RichardPillar 9/9/2014 17:12",
-		"children" : "RichardPillar 2/24/2016 09:19",
-		"initialize" : "RichardPillar 2/24/2016 09:18",
-		"navBarComponent" : "RichardPillar 9/9/2014 17:12",
-		"navBarComponent:" : "RichardPillar 9/9/2014 17:12",
-		"renderContentOn:" : "RichardPillar 4/11/2016 22:48",
+		"children" : "RichardPillar 7/5/2016 19:10",
+		"initialize" : "RichardPillar 7/5/2016 19:11",
+		"menuComponent" : "RichardPillar 7/5/2016 19:10",
+		"menuComponent:" : "RichardPillar 7/5/2016 19:10",
+		"renderContentOn:" : "RichardPillar 7/5/2016 19:06",
 		"style" : "RichardPillar 3/24/2016 10:18",
 		"updateRoot:" : "RichardPillar 4/12/2016 21:38" } }

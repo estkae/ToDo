@@ -1,0 +1,14 @@
+{
+	"category" : "RP_ToDo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"completedItems" ],
+	"name" : "CTToDoSidebarCompletedComponent",
+	"pools" : [
+		 ],
+	"super" : "WAComponent",
+	"type" : "normal" }

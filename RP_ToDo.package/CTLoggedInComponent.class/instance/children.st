@@ -1,3 +1,3 @@
 initialization
 children
-	^ Array with: bodyComponent.
+	^ Array with: bodyComponent with: menuComponent.

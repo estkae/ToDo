@@ -3,9 +3,9 @@ renderContentOn: html
 
 	html div 
 		class: 'row task-header';
-		class: 'col s11';
 		with: [ 
 			html div 
+				class: 'col s11';
 				with: [ 		
 					html div 
 						class: 'col s4';
@@ -13,7 +13,7 @@ renderContentOn: html
 							html heading level: 5;
 							with: [ 
 								html span 
-								style: 'border-bottom: 2px solid lightgray;'; 
+								style: 'border-bottom: 3px solid lightblue;'; 
 								with: 'Description'.
 							]	
 						].		
@@ -23,7 +23,7 @@ renderContentOn: html
 							html heading level: 5;	
 							with: [ 
 								html span 
-								style: 'border-bottom: 2px solid lightgray;'; 
+								style: 'border-bottom: 3px solid lightblue;'; 
 								with: 'Deadline'.
 							]	
 						].	
@@ -33,7 +33,7 @@ renderContentOn: html
 							html heading level: 5;	
 							with: [ 
 								html span 
-								style: 'border-bottom: 2px solid lightgray;'; 
+								style: 'border-bottom: 3px solid lightblue;'; 
 								with: 'Priority'.
 							]	
 						].		
@@ -43,7 +43,7 @@ renderContentOn: html
 							html heading level: 5;	
 							with: [ 
 								html span 
-								style: 'border-bottom: 2px solid lightgray;'; 
+								style: 'border-bottom: 3px solid lightblue;'; 
 								with: 'Status'.
 							]	
 						].	
@@ -53,9 +53,11 @@ renderContentOn: html
 							html heading level: 5;	
 							with: [ 
 								html span 
-								style: 'border-bottom: 2px solid lightgray;'; 
+								style: 'border-bottom: 3px solid lightblue;'; 
 								with: '#Notes'.
 							]	
 						].										
 				].
+				html div
+				class: 'col s1'.
 		].	

@@ -31,48 +31,50 @@ renderToDoTaskNotesOn: html
 			].		
 		
 	"Add Note link / button with callback"	
-	html div 
-		class: 'row';
-		style: 'margin-bottom:5px;';
-		with: [		
-			html div
-				class: 'col s10 note-action';
-				style: 'margin-bottom:20px;';
-				with: [  					
-					html anchor	
-						class: 'add-note';
-						style: 'cursor:pointer';
-						script: (
-							html jQuery this
-							on: 'click'
-							do: ( 
-								( ( ( ( html jQuery this ) closest: '.note-action' ) parent: '.row' ) next: '.row .note-input' ) show: 0.2 seconds )
-						);
-						with: [
-							html span
-								class: 'note-link';  
-								style: 'margin-bottom:20px';
-								with: 'Add Note'.											
-						].																							
-				].
+	( self task status = 'Completed' )
+		ifFalse: [	
 			html div 
-				class: 'col s1'.
+				class: 'row';
+				style: 'margin-bottom:5px;';
+				with: [		
+					html div
+						class: 'col s10 note-action';
+						with: [  					
+							html anchor	
+								class: 'add-note';
+								style: 'cursor:pointer';
+								onClick: ( ( html jQuery ajax )
+									script: [ :s |
+										s << ( ( s jQuery class: 'task-action', self task id ) hide: 0.1 seconds ).								
+										s << ( ( s jQuery class: 'note-input', self task id ) show: 0.2 seconds ).																
+									]
+								);	
+								with: [
+									html span
+										class: 'note-link';  
+										style: 'border-bottom:1px solid lightblue;';
+										with: 'Add Note'.											
+								].																							
+						].
+					html div 
+						class: 'col s1'.
+				]
 		].
 	
 	"ensure that this note component is initialised with the associated task"
 	self noteComponent task: self task.
 	
 	html div 
-		class: 'row note-input';
+		class: 'row note-input note-input', self task id;
 		style: 'display:none';
 		with: [ 
 			html div 
-				class: 'col s10';
+				class: 'col s12';
 				with: [ html render: self noteComponent  ].
 			html div 
 				class: 'col s1'.			
 		].		
 			
 	html div
-		class: 'task-action';
+		class: 'task-action task-action', self task id;
 		with: [ self  renderToDoTaskActionsOn: html. ]. 				

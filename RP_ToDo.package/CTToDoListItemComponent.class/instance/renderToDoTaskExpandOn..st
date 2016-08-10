@@ -28,9 +28,7 @@ renderToDoTaskExpandOn: html
 							else: ( ( ( html jQuery this ) removeClass: 'zoom-out' ),
 								( ( html jQuery this ) addClass: 'zoom-in' ),
 								( ( html jQuery class: 'task-notes-expand', self task id ) text: 'zoom_in'  ),
-								( ( html jQuery class: 'task-data', self task id ) hide: 0.3 seconds ) ) 
-							"else: ( JSScript new add: ( ( html jQuery this ) removeClass: 'zoom-out' ); yourself )"
-							"( ( html jQuery this ) hasClass: 'zoom-in' ) then: ( ( html jQuery this) addClass: 'test-zoom-in' )  else: ( ( html jQuery this ) addClass: 'test-zoom-out' )"								
+								( ( html jQuery class: 'task-data', self task id ) hide: 0.3 seconds ) ) 						
 						)								
 				);																		
 				with: [ 

@@ -5,15 +5,13 @@ jQuery(document).ready(function($){
 	//open the lateral panel
 	$(''.cd-btn'').on(''click'', function(event){
 		event.preventDefault();
-		console.log(''Clicked on a cd-btn'');
 		$(''.cd-panel'').addClass(''is-visible'');
 	});
-	//clode the lateral panel
-	$(''.cd-panel'').on(''click'', function(event){
-		if( $(event.target).is(''.cd-panel'') || $(event.target).is(''.cd-panel-close'') ) { 
+	//close the lateral panel
+	$(''.cd-panel-close'').on(''click'', function(event){
 			$(''.cd-panel'').removeClass(''is-visible'');
+			$(''.sidebar-items'').remove();
 			event.preventDefault();
-		}
 	});
-});
+});	
 '

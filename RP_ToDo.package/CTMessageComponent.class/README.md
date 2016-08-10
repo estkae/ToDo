@@ -1,0 +1,1 @@
+The 'form' message component. Used in the login form.

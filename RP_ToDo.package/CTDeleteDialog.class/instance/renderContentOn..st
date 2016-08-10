@@ -60,21 +60,3 @@ renderContentOn: html
 						 ].
 				 ].
 		 ].
-
-		
-"	html tbsModal id: 'delete_dialog';
-		with: [  
-			html tbsModalDialog: [ 
-				html tbsModalHeader: [  
-					html tbsModalCloseIcon.
-					html tbsModalTitle level: 3; with: 'Top-5 : Task - Delele'
-				].
-				html tbsModalBody: [  
-				].
-				html tbsModalFooter: [  
-					html tbsButton bePrimary; with: 'Save'.
-					html tbsButton: 'Close'.
-				].
-			]
-		].	
-"

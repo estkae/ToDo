@@ -1,0 +1,14 @@
+{
+	"category" : "RP_ToDo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"backlogItems" ],
+	"name" : "CTToDoSidebarBacklogComponent",
+	"pools" : [
+		 ],
+	"super" : "WAComponent",
+	"type" : "normal" }

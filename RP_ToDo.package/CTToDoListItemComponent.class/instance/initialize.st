@@ -3,4 +3,5 @@ initialize
 
 	super initialize.
 	self noteComponent: CTToDoListAddNoteComponent new.
-	self taskActionComponent: CTToDoListItemTaskActionComponent new.	
+	"self taskActionComponent: CTToDoListItemTaskActionComponent new.	"
+	"self taskEditComponent: CTToDoListItemTaskEditComponent new."	

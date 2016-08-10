@@ -7,6 +7,7 @@ renderAddTaskButtonsOn: html
 		with: [ 
 			html div
 				class: 'col s6';
+				style: 'margin-bottom: 20px;';
 				with: [ 
 					html button 
 						bePush;
@@ -50,10 +51,10 @@ renderAddTaskButtonsOn: html
 						onClick: ( ( html jQuery ajax )
 							script: [ :s | 
 								self targetDate: ''. self description: ''. self priority: nil. self backlog: nil.
-								s << ( ( s jQuery class: 'task-entry-block' ) hide: 0.5 seconds ). 
-								s << ( ( s jQuery class: 'task-entry-block' ) remove ).   
+								s << ( ( s jQuery id: 'task-entry' ) slideUp: 0.2 seconds ). 
 								s << ( ( s jQuery class: 'add-task-button' ) removeClass: 'disabled' ).  
-								s << ( ( s jQuery class: 'expand' ) removeClass: 'expand-disabled' ).    
+								s << ( ( s jQuery class: 'expand' ) removeClass: 'expand-disabled' ). 
+								s << ( ( s jQuery class: 'task-entry-block ' ) remove ). 
 							]
 						);
 						with: 'Cancel'.				

@@ -1,0 +1,1 @@
+The 'body' of the application once the user has logged-in. Contains a 'body' component and a 'menu' component.

@@ -1,9 +1,6 @@
 as yet unclassified
 renderTaskInputOn: html
 
-	| myAddTask |
-	myAddTask := CTToDoAddTaskComponent new.
-	
 	html div 
 		with: [ 
 			html div	
@@ -18,7 +15,8 @@ renderTaskInputOn: html
 								ifTrue: [ 
 									s << ( ( s jQuery class: 'task-data' ) hide: 0.4 seconds ).
 									s << ( ( s jQuery class: 'task-data-notes' ) hide: 0.2 seconds ).
-									s << ( ( s jQuery id: 'task-entry' ) load html: [ :r | r render: myAddTask] ).  
+									s << ( ( s jQuery id: 'task-entry' ) append: [ :r | r render: self taskAddComponent ] ).  
+									s << ( ( s jQuery id: 'task-entry' ) slideDown: 0.4 seconds ).  
 									s << ( ( s jQuery class: 'add-task-button' ) addClass: 'disabled' ).   
 									s << ( ( s jQuery class: 'expand' ) addClass: 'expand-disabled' ).	
 									s << ( ( s jQuery class: 'expand' ) removeClass: 'zoom-out' ).	
