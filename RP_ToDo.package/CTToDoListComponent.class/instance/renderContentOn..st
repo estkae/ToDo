@@ -43,5 +43,3 @@ renderContentOn: html
 			html div 
 			  id: 'task-action-modal-content'.
 		].
-	
-	"html document addLoadScript: ( ( JSStream on: '$(''.modal-trigger'').leanModal({ dismissible: false, in_duration: 0, out_duration: 50, ready: function() { $(''.lean-overlay'').remove(); $(''.task-panel'').addClass(''is-visible''); }, complete: function() { $(''.task-panel'').removeClass(''is-visible''); } })' ) ) ."
