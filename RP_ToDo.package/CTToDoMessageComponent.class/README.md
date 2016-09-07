@@ -1,0 +1,1 @@
+A generic message component for showing various types of informational / error messages to the user.

@@ -1,0 +1,1 @@
+Displays a list of 'completed' items within a sidebar container.

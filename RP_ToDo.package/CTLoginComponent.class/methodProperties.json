@@ -2,8 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"aboutComponent" : "RichardPillar 12/24/2014 11:01",
-		"aboutComponent:" : "RichardPillar 12/24/2014 11:01",
 		"children" : "RichardPillar 12/24/2014 11:02",
 		"email" : "RichardPillar 10/10/2014 16:38",
 		"email:" : "RichardPillar 10/10/2014 16:38",
@@ -11,8 +9,6 @@
 		"loginFailed" : "RichardPillar 1/12/2015 12:21",
 		"messageComponent" : "RichardPillar 1/8/2015 18:20",
 		"messageComponent:" : "RichardPillar 1/8/2015 18:19",
-		"navBarComponent" : "RichardPillar 10/3/2014 12:21",
-		"navBarComponent:" : "RichardPillar 10/3/2014 12:21",
 		"password" : "RichardPillar 10/10/2014 16:38",
 		"password:" : "RichardPillar 10/10/2014 16:38",
 		"processEmailInput:" : "RichardPillar 2/24/2016 09:20",
@@ -23,6 +19,5 @@
 		"renderPasswordInputOn:" : "RichardPillar 3/22/2016 23:24",
 		"sha1" : "RichardPillar 1/16/2015 11:47",
 		"sha1:" : "RichardPillar 1/16/2015 11:47",
-		"style" : "RichardPillar 12/24/2014 11:21",
 		"updateRoot:" : "RichardPillar 3/17/2016 23:08",
-		"validateLogin" : "RichardPillar 3/23/2016 09:58" } }
+		"validateLogin" : "RichardPillar 9/5/2016 08:06" } }

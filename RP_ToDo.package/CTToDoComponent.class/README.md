@@ -1,0 +1,1 @@
+Base component for the 'Task List' application after login.

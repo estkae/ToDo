@@ -1,0 +1,1 @@
+The component that is rendered when there are no active tasks.

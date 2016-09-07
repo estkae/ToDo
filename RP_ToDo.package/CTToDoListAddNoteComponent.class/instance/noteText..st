@@ -1,4 +1,0 @@
-accessing
-noteText: anObject
-
-	^ anObject.

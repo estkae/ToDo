@@ -1,0 +1,1 @@
+Component to add a note - included in all 'List Items'.

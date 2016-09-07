@@ -3,7 +3,7 @@ renderToDoTaskExpandOn: html
 
 	html div 
 		class: 'col s1';
-		style: 'margin-top:5px;';
+		style: 'margin-top:10px;';
 		with: [  
 			html anchor 
 				class: 'expand zoom-in';
@@ -35,7 +35,7 @@ renderToDoTaskExpandOn: html
 					html italic 
 						class: 'material-icons';
 						class: 'task-notes-expand task-notes-expand', self task id;
-						style: 'font-size:3rem;color:black;cursor:pointer;margin-top:-5px;';
+						style: 'font-size:2.5rem;color:black;cursor:pointer;margin-top:-5px;';
 						with: 'zoom_in'
 				]		
 		].				

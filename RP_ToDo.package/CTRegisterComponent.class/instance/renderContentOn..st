@@ -24,7 +24,7 @@ renderContentOn: html
 					with: [ 
 						html div 
 							with: [ 
-								html heading
+								html heading level: 2;
 									with: [ 
 										html span 
 											class: 'form-header';

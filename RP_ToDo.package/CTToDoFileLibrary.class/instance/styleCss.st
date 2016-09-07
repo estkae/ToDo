@@ -79,9 +79,9 @@ html, body {
   width: 100%;
   box-shadow: 0px 0px 25px gray;
   visibility: hidden;
-  -webkit-transition: visibility 0s 0.6s;
-  -moz-transition: visibility 0s 0.6s;
-  transition: visibility 0s 0.6s;
+  -webkit-transition: visibility 0s 0.3s;
+  -moz-transition: visibility 0s 0.3s;
+  transition: visibility 0s 0.3s;
   z-index: 200;
 }
 .cd-panel-close {
@@ -343,12 +343,12 @@ html, body {
 }
 @media only screen and (min-width: 768px) {
   .cd-panel-container {
-    width: 70%;
+    width: 85%;
   }
 }
 @media only screen and (min-width: 1170px) {
   .cd-panel-container {
-    width: 50%;
+    width: 65%;
   }
 }
 

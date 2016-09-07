@@ -30,7 +30,7 @@ renderToDoTaskNotesOn: html
 				].
 			].		
 		
-	"Add Note link / button with callback"	
+	"Add Note link / button with callback - only for tasks that are not 'completed'"	
 	( self task status = 'Completed' )
 		ifFalse: [	
 			html div 

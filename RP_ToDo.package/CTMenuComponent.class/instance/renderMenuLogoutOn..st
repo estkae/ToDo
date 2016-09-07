@@ -12,5 +12,5 @@ renderMenuLogoutOn: html
 			html italic 
 				class: 'material-icons';
 				style: 'font-size:4rem;color:#004d40;';
-				with: 'power_settings_new'  
+				with: 'settings_power'  
 		].  

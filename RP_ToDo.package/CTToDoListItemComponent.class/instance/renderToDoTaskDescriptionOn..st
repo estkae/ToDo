@@ -22,20 +22,20 @@ renderToDoTaskDescriptionOn: html
 		with: [ 	
 			html div
 				class: 'description', self task id, ' ', myWidthClass;	
-				style: 'font-size: 18px;font-family:Roboto;';
+				style: 'font-size: 16px;font-family:Roboto;';
 				with: self task taskDescription. 	
 			html div 
 				class: 'col s2 deadline', self task id;
-				style: 'font-size: 18px;';
+				style: 'font-size: 16px;';
 				with: self task deadline.	
 			html div 
 				class: 'col s2 priority', self task id;
-				style: 'font-size: 18px;';
+				style: 'font-size: 16px;';
 				with: self task priority.	
 			( self task status = 'Active' ) ifTrue: [ 		
 				html div 
 					class: 'col s2 status', self task id;
-					style: 'font-size: 18px;';
+					style: 'font-size: 16px;';
 					with: self task status.
 			].	
 			html div 
@@ -43,7 +43,7 @@ renderToDoTaskDescriptionOn: html
 				class: 'numberofnotes';
 				with: [
 					html span
-					style: 'font-size: 18px;color:teal;'; 
+					style: 'font-size: 16px;color:teal;'; 
 					with: '( ', self task numberOfNotes, ' )' .
 				]
 		].	

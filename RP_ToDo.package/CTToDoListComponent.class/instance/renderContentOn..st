@@ -30,7 +30,7 @@ renderContentOn: html
 
 	html div 
 		id: 'task-edit-modal';
-		style: 'display:none;position:fixed;top: 0; left: 0; bottom: 0; right: 0; z-index:500; height: 650px; width: 900px; margin: 190px auto; border: 4px solid  #8aacb8; border-radius: 10px; background-color: #fff; text-align:center; padding: 20px;';
+		style: 'display:none;position:fixed;top: 0; left: 0; bottom: 0; right: 0; z-index:500; height: 550px; width: 900px; margin: 120px auto; border: 4px solid  #8aacb8; border-radius: 10px; background-color: #fff; text-align:center; padding: 20px;';
 		with: [
 			html div 
 			  id: 'task-edit-modal-content'.

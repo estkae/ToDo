@@ -3,7 +3,7 @@ validateLogin
 
 	| user myPassword |
 
-	user := self session findUserByEmail: self email.
+	user := self session database findUserByEmail: self email.
 	myPassword := self password.
 
 	( user notNil and: [ user password = myPassword ] )

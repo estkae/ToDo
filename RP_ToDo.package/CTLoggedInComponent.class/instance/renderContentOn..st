@@ -9,4 +9,6 @@ renderContentOn: html
 		class: 'row';
 		with: self bodyComponent.
 
+	html document addLoadScript: (html jQuery document onAjaxError: (self ajaxErrorHandler asFunction: #('event' 'jqxhr' 'settings' 'exception')))		
+
 						

@@ -1,0 +1,1 @@
+Base class for persistence - details methods that subclasses need to define.

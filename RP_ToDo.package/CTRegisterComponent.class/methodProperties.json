@@ -2,21 +2,17 @@
 	"class" : {
 		 },
 	"instance" : {
-		"aboutComponent" : "RichardPillar 1/8/2015 17:36",
-		"aboutComponent:" : "RichardPillar 1/8/2015 17:36",
 		"children" : "RichardPillar 3/6/2016 20:48",
 		"email" : "RichardPillar 1/12/2015 17:00",
 		"email:" : "RichardPillar 1/12/2015 17:00",
-		"initialize" : "RichardPillar 3/6/2016 20:25",
+		"initialize" : "RichardPillar 9/2/2016 07:56",
 		"messageComponent" : "RichardPillar 1/12/2015 15:00",
 		"messageComponent:" : "RichardPillar 1/12/2015 14:57",
-		"navBarComponent" : "RichardPillar 10/3/2014 12:27",
-		"navBarComponent:" : "RichardPillar 10/3/2014 12:27",
 		"password" : "RichardPillar 1/12/2015 17:18",
 		"password:" : "RichardPillar 1/12/2015 17:18",
 		"registerUser" : "RichardPillar 6/6/2016 22:15",
 		"renderButtonsOn:" : "RichardPillar 3/6/2016 20:52",
-		"renderContentOn:" : "RichardPillar 2/27/2016 17:21",
+		"renderContentOn:" : "RichardPillar 9/6/2016 08:28",
 		"renderEmailInputOn:" : "RichardPillar 2/23/2016 15:39",
 		"renderNameInputOn:" : "RichardPillar 3/6/2016 20:51",
 		"renderPasswordInputOn:" : "RichardPillar 6/6/2016 21:56",
@@ -31,4 +27,4 @@
 		"user:" : "RichardPillar 10/6/2014 17:00",
 		"userId" : "RichardPillar 1/12/2015 17:00",
 		"userId:" : "RichardPillar 1/12/2015 17:00",
-		"validateRegistration" : "RichardPillar 6/6/2016 22:07" } }
+		"validateRegistration" : "RichardPillar 9/5/2016 08:09" } }

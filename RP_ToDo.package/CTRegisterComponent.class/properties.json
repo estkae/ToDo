@@ -11,8 +11,6 @@
 		"email",
 		"password",
 		"repeatPassword",
-		"navBarComponent",
-		"aboutComponent",
 		"messageComponent",
 		"sha1" ],
 	"name" : "CTRegisterComponent",

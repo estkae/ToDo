@@ -6,7 +6,7 @@ addNoteToTask: aTask
 		ifTrue: [ ^ ''  ].
 		
 	"create note object"	
-	self note: CTNote new.
+	self note: CTModelNote new.
 	self note taskNote: self noteString.
 
 	"update the db"

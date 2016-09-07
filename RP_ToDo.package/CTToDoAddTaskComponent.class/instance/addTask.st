@@ -3,7 +3,7 @@ addTask
 	
 	| myTask |
 			
-	myTask := CTTask new.
+	myTask := CTModelTask new.
 	myTask taskDescription: self description.
 	myTask deadline: self targetDate.
 	myTask priority: self priority.

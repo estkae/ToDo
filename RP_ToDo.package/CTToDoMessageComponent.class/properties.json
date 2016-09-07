@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "RichardPillar 9/6/2016 22:55",
 	"instvars" : [
 		"messageString" ],
 	"name" : "CTToDoMessageComponent",

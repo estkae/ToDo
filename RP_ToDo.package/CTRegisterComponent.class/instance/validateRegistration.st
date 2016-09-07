@@ -8,7 +8,7 @@ validateRegistration
 	self email isEmptyOrNil 
 		ifTrue: [ ^ self messageComponent errorMessage: 'An Email address needs to be entered'   ].
 		
-	myUser := self session findUserByEmail: self email.
+	myUser := self session database findUserByEmail: self email.
 	( myUser notNil )
 		ifTrue: [ ^ self messageComponent errorMessage: 'A user with this email already exists' ].
 		

@@ -12,19 +12,6 @@ renderContentOn: html
 					with: 'Top-5'
 				]  
 		].	
-				
-		html div
-			class: 'row';
-			with: [ 							
-				html div
-					class: ' col s8 offset-s2'; 
-					class: 'todo-input';
-					with: [ 
-						html div 
-							class: 'col s12';
-							with: [  self renderTaskInputOn: html ].						
-					].
-			].
 		
 		html div 
 			class: 'row';
@@ -33,10 +20,7 @@ renderContentOn: html
 				html div 
 					class: 'col s8 offset-s2'; 
 					style: 'display:none;'; 
-					id: 'task-entry'";
-					with: [
-						html render: self taskAddComponent.   
-					]"
+					id: 'task-entry'
 			].		
 				
 		html div 

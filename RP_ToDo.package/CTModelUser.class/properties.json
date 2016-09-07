@@ -1,0 +1,17 @@
+{
+	"category" : "RP_ToDo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "RichardPillar 7/5/2016 19:35",
+	"instvars" : [
+		"userName",
+		"email",
+		"tasks",
+		"password" ],
+	"name" : "CTModelUser",
+	"pools" : [
+		 ],
+	"super" : "SDActiveRecord",
+	"type" : "normal" }
