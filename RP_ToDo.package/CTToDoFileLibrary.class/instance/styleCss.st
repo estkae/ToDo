@@ -79,9 +79,9 @@ html, body {
   width: 100%;
   box-shadow: 0px 0px 25px gray;
   visibility: hidden;
-  -webkit-transition: visibility 0s 0.3s;
-  -moz-transition: visibility 0s 0.3s;
-  transition: visibility 0s 0.3s;
+  -webkit-transition: visibility 0s 0.6s;
+  -moz-transition: visibility 0s 0.6s;
+  transition: visibility 0s 0.6s;
   z-index: 200;
 }
 .cd-panel-close {
